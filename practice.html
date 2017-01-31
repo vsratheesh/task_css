@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practice</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <script type="text/javascript">
+  	$(document).ready(function () {
+    var $inputs = $('input[type="checkbox"]')
+    $inputs.on('change', function () {
+        var sum = 0;
+        $inputs.each(function() {
+           if(this.checked)
+               sum += parseInt(this.value);
+        });
+        $("#price").val(sum);
+    });
+});
+  </script>
+
+  <style type="text/css">
+  	.col-2 {
+	float:left;
+    width: 66.66%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-3 {
+	float:left;
+    width: 32.33333333%;
+	position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+	
+	.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+	    border: 0;
+}
+.text-center {
+    text-align: center;
+}
+p {
+    margin: 0 0 10px;
+}
+
+.calc{
+margin : 30px;
+}
+  </style>
+
+</head>
+<body>
+	<div class="col-2 res">
+		<div class="col-3 res">
+			<img src="1.jpg"  class="item-img img-responsive">
+			<div class="text-center"><a href="#">item1</a>
+			<p>
+    <input type="checkbox" id="waterdm" name="waterdm" value="100" />RS.100</p>
+		</div></div>
+		
+		<div class="col-3 res">
+			<img src="1.jpg"  class="item-img img-responsive">
+			<div class="text-center"><a href="#">item2</a>
+			<p>
+    <input type="checkbox" id="waterdm" name="waterdm" value="200" />RS.200</p>
+		</div></div>
+
+		<div class="col-3 res">
+			<img src="1.jpg"  class="item-img img-responsive">
+			<div class="text-center"><a href="#">item3</a>
+			<p>
+    <input type="checkbox" id="waterdm" name="waterdm" value="300" />RS.300</p>
+		</div></div>
+
+		<div class="col-3 res">
+			<img src="1.jpg"  class="item-img img-responsive">
+			<div class="text-center"><a href="#">item4</a>
+			<p>
+    <input type="checkbox" id="waterdm" name="waterdm" value="400" />RS.400</p>
+		</div></div>
+
+		<div class="col-3 res">
+			<img src="1.jpg"  class="item-img img-responsive">
+			<div class="text-center"><a href="#">item5</a>
+			<p>
+    <input type="checkbox" id="waterdm" name="waterdm" value="500" />RS.500</p>
+		</div></div>
+
+		<div class="col-3 res">
+			<img src="1.jpg"  class="item-img img-responsive">
+			<div class="text-center"><a href="#">item6</a>
+			<p>
+    <input type="checkbox" id="waterdm" name="waterdm" value="600" />RS.600</p>
+		</div></div>
+		
+		
+	</div>
+
+
+	<div class="calc">
+		<p>Calculated Price:
+    <input type="text" name="price" id="price" />
+</p>
+	</div>
+</body>
+</html>
+
+
+
+
+
